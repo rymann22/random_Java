@@ -1,0 +1,306 @@
+########################################################
+===[ Table of Contents ]================================
+########################################################
+1. syntax
+  - comments
+  - structure
+    - class
+    - method
+    - statement
+
+2. Types
+  - Character
+  - Data
+  - variables
+
+3. Input and Output
+  - system.out
+  - scanner
+  - split (trim)
+
+4. conditional statements
+  - if statements
+    - short circuit evaluations (and/or)
+  - switch statements
+
+5. loops
+  - for loop
+  - while loop
+  - do while loop
+
+6. Arrays
+  - array
+  - arrayList
+
+99. resources/links
+
+########################################################
+===[ 1. Syntax ]========================================
+########################################################
+========================================================
+---[ comments ]-----------------------------------------
+========================================================
+// single line comment
+/*
+multiple lines
+commented out
+*/
+========================================================
+---[ structure ]----------------------------------------
+========================================================
+- class
+- method
+- statement
+
+########################################################
+===[ 2. Types ]=========================================
+########################################################
+========================================================
+---[ Character Types ]----------------------------------
+========================================================
+Check Character Types
+- Outputs are true or false
+1. isLetter(c) // a-z or A-Z
+  - isLetter('a') //true
+  - isLetter('3') //false
+  - isLetter('!') //false
+2. isDigit(c)
+  - isDigit('b') //false
+  - isDigit('2') //true
+3. isWhitespace(c)
+  - isWhitespace(' ') //true
+  - isWhitespace('\n') //true
+  - isWhitespace('5') //false
+
+Modify Characters
+1. toUpperCase(c)
+  - toUpperCase('z') // Z
+  - toUpperCase('B') // B
+  - toUpperCase('6') // 6
+2. toLowerCase(c)
+  - toLowerCase('z') // z
+  - toLowerCase('B') // b
+  - toLowerCase('6') // 6
+
+========================================================
+---[ Data Types ]---------------------------------------
+========================================================
+1. short x = 999; // -32768 to 32767
+2. int   x = 99999;     // -2147483648 to 2147483647
+3. long  x = 99999999999L; // -9223372036854775808 to 9223372036854775807
+4. float x = 1.2; // 32 bits (4 bytes) or precision of ~6-7 decimal points
+5. double x = 99.99d; //// 64 bits (8 bytes) or precision of ~15-16 decimal points
+6. byte x = 99; // -128 to 127
+7. char x = 'A'; // single character
+8. string x = 'abc'; // string of characters
+9. boolean x = true; // true or false
+
+========================================================
+---[ variables ]----------------------------------------
+========================================================
+
+########################################################
+===[ 3. Input and Output ]==============================
+########################################################
+========================================================
+---[ system.out ]---------------------------------------
+========================================================
+========================================================
+---[ scanner ]------------------------------------------
+========================================================
+========================================================
+---[ split (trim) ]-------------------------------------
+========================================================
+
+########################################################
+===[ 4. Conditional Statements ]========================
+########################################################
+========================================================
+---[ if  / if else statements ]-------------------------
+========================================================
+- If statements can stop after the first closed curly bracket (right before the first else)
+- 3 Options are... (ce is conditional expression)
+  - if (ce) {code}
+  - if (ce) {code}, else {code}
+  - if (ce) {code}, else if (ce2) {code}, else {code}
+
+--------------------------------------------------------
+---[ Syntax ]-------------------------------------------
+--------------------------------------------------------
+if(conditional_expression_1) {
+  // code to run if true;
+} else if (conditional_expression_2) {
+  // code to run if conditional_expression_1 is false;
+  // but conditional_expression_2 is true;
+} else {
+  // code to run if all false;
+}
+
+
+========================================================
+---[ Short Circuit Evaluations (and/or) ]---------------
+========================================================
++----------------------+-------------------+-----------------------------------------------------------------+
+| Operator             | Example           | Short circuit evaluation                                        |
+|======================#===================#=================================================================|
+| operand1 && operand2 | true && operand2  | If the first operand evaluates to true, operand2 is evaluated.  |
+|                      +-------------------+-----------------------------------------------------------------|
+|                      | false && operand2 | If the first operand evaluates to false, the result of the AND  |
+|                      |                   | operation is always false, so operand2 is not evaluated.        |
+|----------------------+-------------------+-----------------------------------------------------------------|
+| operand1 || operand2 | true || operand2  | If the first operand evaluates to true, the result of the OR    |
+|                      |                   | operation is always true, so operand2 is not evaluated.         |
+|                      +-------------------+-----------------------------------------------------------------|
+|                      | false || operand2 | If the first operand evaluates to false, operand2 is evaluated. |
++----------------------+-------------------+-----------------------------------------------------------------|
+
+
+========================================================
+---[ switch statements ]--------------------------------
+========================================================
+- Alternative to if-else "ladder" 
+- Passes code to "options" based off conditional expressions
+- Useful if you already know what the code should output
+
+--------------------------------------------------------
+---[ Syntax ]-------------------------------------------
+--------------------------------------------------------
+switch(conditional_expression_1) {
+case value1:
+  // code to run if conditional_expression_1 equals value1;
+  break; // not mandatory, but best practice
+case value2:
+  // code to run if conditional_expression_1 equals value2;
+  break; // not mandatory, but best practice
+default:
+  // code to run if everything "fails"
+  // could be used as a "help" messege or debugging 
+}
+
+########################################################
+===[ 5. Loops ]=========================================
+########################################################
+========================================================
+---[ for loop ]-----------------------------------------
+========================================================
+- Loop through stuff...
+
+--------------------------------------------------------
+---[ Syntax 1 ]-----------------------------------------
+--------------------------------------------------------
+for (initialization; condition; increment/decrement) {
+  // code to loop through
+}
+
+--------------------------------------------------------
+---[ Syntax 2 ]-----------------------------------------
+--------------------------------------------------------
+for (statement 1; statement 2; statement 3) {
+  // code
+}
+
+--------------------------------------------------------
+---[ Example ]------------------------------------------
+--------------------------------------------------------
+- Set i to 0, while it's less than 5 print the number, then add 1
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+========================================================
+---[ while loop ]---------------------------------------
+========================================================
+- While condition is true, repeat code
+- Unlike the Do-While loop, if the condition is NOT true, the code won't run
+
+--------------------------------------------------------
+---[ Syntax ]-------------------------------------------
+--------------------------------------------------------
+while (conditional_expression) {
+  // code to loop
+}
+
+========================================================
+---[ do while loop ]------------------------------------
+========================================================
+- Similar to while, but this will run the code once (first), THEN check the while statement
+- This will ALWAYS run the code at least once
+
+--------------------------------------------------------
+---[ Syntax ]-------------------------------------------
+--------------------------------------------------------
+do {
+  // code
+} while (conditional_expression);
+
+########################################################
+===[ 6. Arrays ]========================================
+########################################################
+========================================================
+---[ array ]--------------------------------------------
+========================================================
+There are two types of arrays, a "simple" array and a "dynamic" arraylist
+
+
+ 
+  - fixed size (must specify when creating)
+  - can't add or remove later
+  - int numbers[] = new int[10]; //fixed size of 10 
+  - can store specific types of data (int, string, etc)
+    - int[] numArray = {1, 2, 3};
+    - String[] stringArray = {"Ryan", "Pepper", "Islay"};
+
+  - array methods
+    - compare()    - compare two arrays
+    - copyOf()     - create a copy of an array with new length
+    - deepEquals() - compare 2d arrrays to see if they're equal
+    - equals()     - check if 2 arrays are equal
+    - fill()       - fill array with specified value
+    - mismatch()   - return index position of first match/conflict between two arrays
+    - sort()       - sort array in ascending order
+
+
+========================================================
+---[ arrayList ]----------------------------------------
+======================================================== 
+  - dynamic 
+  - can add or remove later
+
+  - ArrayList<Integer> numbers = new ArrayList<>(); //creates new array list
+  - numbers.add(3); //adds the number 3 to the list
+
+  - arrayList methods
+    - add()            - boolean|void  - Add an item to the list
+    - addAll()         - boolean       - Add a collection of items to the list
+    - clear()          - void          - Remove all items from the list
+    - clone()          - Object        - Create a copy of the ArrayList
+    - contains()       - boolean       - Checks whether an item exist in the list
+    - ensureCapacity() - void          - Increase the capacity of the list to be able to fit a specified number of items
+    - forEach()        - void          - Perform an action on every item in the list
+    - get()            - T             - Return the item at a specific position in the list
+    - indexOf()        - int           - Return the position of the first occurrence of an item in the list
+    - isEmpty()        - boolean       - Checks whether the list is empty
+    - iterator()       - Iterator      - Return an Iterator object for the ArrayList
+    - lastIndexOf()    - int           - Return the position of the last occurrence of an item in the list
+    - listIterator()   - ListIterator  - Return a ListIterator object for the ArrayList
+    - remove()         - boolean|T     - Remove an item from the list
+    - removeAll()      - boolean       - Remove a collection of items from the list
+    - removeIf()       - boolean       - Remove all items from the list which meet a specified condition
+    - replaceAll()     - void          - Replace each item in the list with the result of an operation on that item
+    - retainAll()      - boolean       - Remove all elements from the list which do not belong to a specified collection
+    - set()            - T             - Replace an item at a specified position in the list
+    - size()           - int           - Return the number of items in the list
+    - sort()           - void          - Sort the list
+    - spliterator()    - Spliterator   - Return a Spliterator object for the ArrayList
+    - subList()        - List          - Return a sublist which provides access to a range of this list's items
+    - toArray()        - Object[]      - Return an array containing the list's items
+    - trimToSize()     - Object[]      - Reduce the capacity of the list to match the number of items if necessary
+
+
+
+##########################################
+references
+##########################################
+1. https://onecompiler.com/java/wiki
+2. https://www.w3schools.com/java/java_conditions_elseif.asp
+----------------------

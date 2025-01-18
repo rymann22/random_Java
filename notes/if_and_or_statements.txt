@@ -1,0 +1,23 @@
+- These are called short circuit evaluations
+- They read from left to right in something like an if statement
+- Simple explination
+  - if condition 1 is true && condition 2 is true
+    - run this code
+  - else, run this
+- Operators
+- && - both conditions need to be true to run
+- || - runs if either condition one, condition two, or both conditions are true
+
+Workflow
+x = 5; // set value of x to 5
+// check if condition 1 is true
+if (( x > 0 ) && (x < 10)) {
+  System.out.println('x is greater than 0 and less than 10');
+} else {
+  System.out.println('x is not greater than 0 or less than 10');
+}
+
+1. condition 1: ( x > 0 ) 
+2. and/or: && 
+3. condition 2: (x < 10)
+

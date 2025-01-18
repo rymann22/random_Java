@@ -1,0 +1,23 @@
+Check Character Types
+- Outputs are true or false
+1. isLetter(c) // a-z or A-Z
+  - isLetter('a') //true
+  - isLetter('3') //false
+  - isLetter('!') //false
+2. isDigit(c)
+  - isDigit('b') //false
+  - isDigit('2') //true
+3. isWhitespace(c)
+  - isWhitespace(' ') //true
+  - isWhitespace('\n') //true
+  - isWhitespace('5') //false
+
+Modify Characters
+1. toUpperCase(c)
+  - toUpperCase('z') // Z
+  - toUpperCase('B') // B
+  - toUpperCase('6') // 6
+2. toLowerCase(c)
+  - toLowerCase('z') // z
+  - toLowerCase('B') // b
+  - toLowerCase('6') // 6

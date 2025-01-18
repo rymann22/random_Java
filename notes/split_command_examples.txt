@@ -1,0 +1,23 @@
+This will cover split and briefly touch on arrays
+
+The lines below is using the "split" command 
+- String fullName = scanner.nextLine().trim();
+  - ".trim()" is used to remove leading and trailing whitespace
+- String[] nameParts = fullName.split("\\s+");
+
+Breakdown
+- String[]
+  - This indicates that the variable will be a string, and the square brackets will assign the "parts" to an array
+  - If the input is Peter Parker it will basically mean this
+    - {"Peter", "Parker"}
+    - Peter will be at index 0, or nameParts[0]
+    - Parker will be at index 1, or nameParts[1]
+- nameParts
+  - the variable name
+- fullName.split("\\s+");
+  - takes the variable "fullName" and splits it
+  - ("\\s+") 
+    - regular expression
+    - \\s matches any whitespace character (space, tab, newline)
+    - + means one or more of preceding element
+

@@ -1,0 +1,12 @@
+public class Restaurant {                         // Info about a restaurant
+   // Internal fields
+   public void setName(String restaurantName) {   // Sets the restaurant's name
+      ...
+   }
+   public void setRating(int userRating) {        // Sets the rating (1-5, with 5 best)
+      ...
+   }
+   public void print() {                          // Prints name and rating on one line
+      ...
+   }
+}

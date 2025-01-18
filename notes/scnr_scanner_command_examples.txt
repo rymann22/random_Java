@@ -1,0 +1,53 @@
+Scanner (input data) Types
+
+- nextBoolean() - boolean - (true/false) 
+- nextByte()    - byte value - 99; // -128 to 127
+- nextDouble()  - double value - 99.99d; //// 64 bits (8 bytes) or precision of ~15-16 decimal points
+- nextFloat()   - float value - 1.2; // 32 bits (4 bytes) or precision of ~6-7 decimal points
+- nextInt()     - int value - 99999; 		// -2147483648 to 2147483647
+- nextLine()    - line value - returns everything from where you are, to the end of the line
+- nextLong()    - long value - 99999999999L; // -9223372036854775808 to 9223372036854775807
+- nextShort()   - short - 999; // -32768 to 32767
+---------------------------------------------------------------------------------------------------------------------------------------------
+This is the best explanation I've seen so far (reddit)
+* source #2
+
+
+1. The Scanner takes the input you give it and splits it into tokens. By default, the Scanner splits the input based on whitespace.
+
+- For example, for this input:
+  - hello world 123
+  - 456 789 meow
+- The tokens are:
+  1. hello
+  2. world
+  3. 123
+  4. 456
+  5. 789
+  6. meow
+
+2. The next() method returns the next token that is found.
+
+3. The nextInt() method (or other similar methods) take a token, try to convert it (in this example to int) and return the converted value. You will get an exception if the conversion fails.
+
+4. The nextLine() method ignores token separation and returns everything from the place you are to the end of the line.
+
+5. For example, for the same input as above, assuming a Scanner s, the following calls:
+
+- Command
+  - System.out.println(s.next()); // get token 1 (hello) - cursor now at token 2 (world)
+  - System.out.println(s.nextLine()); // get the rest of that line - starts at token 2 (world) and also gets token 3 (123) - cursor now at next line
+  - System.out.println(s.nextInt()); // gets the the next token and try to set data type to int. outputs exception if conversion fails
+
+  - Input (again)
+    - hello world 123
+    - 456 789 meow
+  - Will print:
+    - hello
+    - world 123
+    - 456
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+sources
+1. https://www.geeksforgeeks.org/scanner-class-in-java/
+2. https://www.reddit.com/r/Kotlin/comments/jp34cz/i_dont_understand_java_scanner_im_doing_this/

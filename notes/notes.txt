@@ -1,0 +1,51 @@
+===============================================
+Java Compilation / Creating Executables
+- if we have a program called testProgram.java, we can run the command below to compile it
+  - javac testProgram.java
+- This will create a new file, or an executable class,  called testProgram.class
+- After that, we can run the command below
+  - java testProgram
+
+- Typically, smaller "hello world" style scripts don't matter as much if you just run java testProgram.java
+- javac to compile, then running java testProgram is better for larger projects with more frequent runs and error checking
+
+* From Codecademy: https://www.codecademy.com/courses/learn-java/lessons/hello-world-java/exercises/compilation-creating-executables 
+===============================================
+
+===============================================
+/*
+This is a way to comment
+out multiple lines in Java
+*/
+
+The text to the right of the "//" is commented out // this text is commented out
+
+===============================================
+- Print text out (stays on same line)
+  - Sysrem.out.print("string");
+
+- Print text out (new line)
+  - Sysrem.out.println("string");
+
+- Set data type
+  - int myAge;
+  - String myName;
+
+- Get myAge from user input
+  - myAge = scnr.nextInt();
+
+- Get myName from user input 
+  - myName = scnr.nextLine(); (copies leading white spaces)
+  - myName = scnr.next(); (leaves newline in input)
+
+===============================================
+- Java "structure"
+public class Person { // 1
+  public static void main(String[] args) { // 2
+    System.out.println("Hello, world!"); // 3
+  }
+}
+// 1. Class - The "top level" is the class. This "class" or Person needs to match the filename. So this file should be Person.java
+// 2. Method - everything needs to start with "main"
+// 3. Statement - just do shit
+===============================================

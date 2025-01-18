@@ -1,0 +1,35 @@
+====================================================================
+My notes on what to do...
+// assign data type to variable
+// get input from user
+// while input is greater than 0, keep getting input
+// if input < 0, stop
+// find smallest  value
+// sum of all values greater than 0
+
+====================================================================
+What chatgpt does
+1. set "sum" to 0
+2. set smallest to integer max_value
+3. while loop
+  3.a. set input as an integer
+  3.b. if input is less than 0, break
+  3.c. add input values to sum variable
+  3.d. if input is less than smallest value, update smallest with input
+ 
+
+====================================================================
+Break down what I need to know well for this task
+1. While loops (while true)
+2. If statements (if input < 0)
+  2.a. break
+3. Increment variables
+4. Integer.MAX_VALUE
+5. Print smallest value
+6. Print sum
+
+====================================================================
+Lab question
+Collect integers until a negative value is detected. Output the sum
+of all non-negative numbers. Output the smallest non-negative value 
+as well

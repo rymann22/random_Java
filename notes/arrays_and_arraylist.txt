@@ -1,0 +1,54 @@
+/Users/rymann22/github/D286_Java_Fundamentals/practice_lab/notes/syntax_cheat_sheet.txt
+
+There are two types of arrays, a "simple" array and a "dynamic" arraylist
+
+1. array 
+  - fixed size (must specify when creating)
+  - can't add or remove later
+  - int numbers[] = new int[10]; //fixed size of 10 
+  - can store specific types of data (int, string, etc)
+    - int[] numArray = {1, 2, 3};
+    - String[] stringArray = {"Ryan", "Pepper", "Islay"};
+
+  - array methods
+    - compare()    - compare two arrays
+    - copyOf()     - create a copy of an array with new length
+    - deepEquals() - compare 2d arrrays to see if they're equal
+    - equals()     - check if 2 arrays are equal
+    - fill()       - fill array with specified value
+    - mismatch()   - return index position of first match/conflict between two arrays
+    - sort()       - sort array in ascending order
+
+2. arraylist 
+  - dynamic 
+  - can add or remove later
+
+  - ArrayList<Integer> numbers = new ArrayList<>(); //creates new array list
+  - numbers.add(3); //adds the number 3 to the list
+
+  - arrayList methods
+    - add()            - boolean|void  - Add an item to the list
+    - addAll()         - boolean       - Add a collection of items to the list
+    - clear()          - void          - Remove all items from the list
+    - clone()          - Object        - Create a copy of the ArrayList
+    - contains()       - boolean       - Checks whether an item exist in the list
+    - ensureCapacity() - void          - Increase the capacity of the list to be able to fit a specified number of items
+    - forEach()        - void          - Perform an action on every item in the list
+    - get()            - T             - Return the item at a specific position in the list
+    - indexOf()        - int           - Return the position of the first occurrence of an item in the list
+    - isEmpty()        - boolean       - Checks whether the list is empty
+    - iterator()       - Iterator      - Return an Iterator object for the ArrayList
+    - lastIndexOf()    - int           - Return the position of the last occurrence of an item in the list
+    - listIterator()   - ListIterator  - Return a ListIterator object for the ArrayList
+    - remove()         - boolean|T     - Remove an item from the list
+    - removeAll()      - boolean       - Remove a collection of items from the list
+    - removeIf()       - boolean       - Remove all items from the list which meet a specified condition
+    - replaceAll()     - void          - Replace each item in the list with the result of an operation on that item
+    - retainAll()      - boolean       - Remove all elements from the list which do not belong to a specified collection
+    - set()            - T             - Replace an item at a specified position in the list
+    - size()           - int           - Return the number of items in the list
+    - sort()           - void          - Sort the list
+    - spliterator()    - Spliterator   - Return a Spliterator object for the ArrayList
+    - subList()        - List          - Return a sublist which provides access to a range of this list's items
+    - toArray()        - Object[]      - Return an array containing the list's items
+    - trimToSize()     - Object[]      - Reduce the capacity of the list to match the number of items if necessary

@@ -1,0 +1,74 @@
+Java
+
+==[ If Statement ]=================================================
+
+1. Used for single or multiple condition control flow
+2. Features
+  2.a. Condition Types: Booleans, ranges, complex conditions
+  2.b. Complexity: Flexible, can handle COMPLEX logical structures
+  2.c. Efficiency: Slower - many conditions to to sequentially checking
+  2.d. Use Case: Ranges, complex logic, multiple variable checks
+
+--[ Syntax ]--------------------------------------------------------
+if (condition1) {
+    // code to execute if condition1 is true
+} else if (condition2) {
+    // code to execute if condition2 is true
+} else {
+    // code to execute if none of the conditions are true
+}
+--[ End Syntax ]----------------------------------------------------
+====================================================================
+--[ Example ]-------------------------------------------------------
+int score = 85;
+if (score >= 90) {
+    System.out.println("Grade A");
+} else if (score >= 80) {
+    System.out.println("Grade B");
+} else if (score >= 70) {
+    System.out.println("Grade C");
+} else {
+    System.out.println("Grade F");
+}
+--[ End Example ]--------------------------------------------------
+
+###################################################################
+==[ Switch Statements ]============================================
+###################################################################
+
+1. Used for a more efficient way to handle specific values
+2. Features
+  2.a. Condition Types: Fixed values (int, char, string, enum)
+  2.b. Complexity: Simpler, designed for multiple constant values
+  2.c. Efficiency: Can be faster due to possible optimization
+  2.d. Use Case: Matching ONE variable to several specific values
+
+--[ Syntax ]--------------------------------------------------------
+switch (expression) {
+    case value1:
+        // code to execute if expression equals value1
+        break;
+    case value2:
+        // code to execute if expression equals value2
+        break;
+    default:
+        // code to execute if none of the cases match
+}
+--[ End Syntax ]----------------------------------------------------
+====================================================================
+--[ Example ]-------------------------------------------------------
+String grade = "B";
+switch (grade) {
+    case "A":
+        System.out.println("Excellent!");
+        break;
+    case "B":
+        System.out.println("Good Job!");
+        break;
+    case "C":
+        System.out.println("You passed");
+        break;
+    default:
+        System.out.println("Needs Improvement");
+}
+--[ End Example ]---------------------------------------------------

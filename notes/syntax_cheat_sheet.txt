@@ -1,0 +1,141 @@
+######################################################
+===[ Variables ]===================
+######################################################
+
+1. short x = 999; // -32768 to 32767
+2. int   x = 99999; 		// -2147483648 to 2147483647
+3. long  x = 99999999999L; // -9223372036854775808 to 9223372036854775807
+4. float x = 1.2; // 32 bits (4 bytes) or precision of ~6-7 decimal points
+5. double x = 99.99d; //// 64 bits (8 bytes) or precision of ~15-16 decimal points
+
+6. byte x = 99; // -128 to 127
+7. char x = 'A'; // single character
+8. string x = 'abc'; // string of characters
+9. boolean x = true; // true or false
+
+######################################################
+===[ Arrays ]======================
+######################################################
+
+There are two types. array and arraylist
+
+1. array 
+  - fixed size (must specify when creating)
+  - can't add or remove later
+  - int numbers[] = new int[10]; //fixed size of 10 
+  - can store specific types of data (int, string, etc)
+    - int[] numArray = {1, 2, 3};
+    - String[] stringArray = {"Ryan", "Pepper", "Islay"};
+
+2. arraylist 
+  - dynamic 
+  - can add or remove later
+
+  - ArrayList<Integer> numbers = new ArrayList<>(); //creates new array list
+  - numbers.add(3); //adds the number 3 to the list
+
+
+######################################################
+===[ Loops  ]===================
+######################################################
+================================
+---[ If Else  ]-------------------
+================================
+- If statements can stop after the first closed curly bracket (right before the first else)
+- 3 Options are... (ce is conditional expression)
+  - if (ce) {code}
+  - if (ce) {code}, else {code}
+  - if (ce) {code}, else if (ce2) {code}, else {code}
+
+----------------------------------
+---[ Syntax ]---------------------
+----------------------------------
+if(conditional_expression_1) {
+  // code to run if true;
+} else if (conditional_expression_2) {
+  // code to run if conditional_expression_1 is false;
+  // but conditional_expression_2 is true;
+} else {
+  // code to run if all false;
+}
+
+================================
+---[ Switch  ]-------------------
+================================
+- Alternative to if-else "ladder" 
+- Passes code to "options" based off conditional expressions
+- Useful if you already know what the code should output
+
+----------------------------------
+---[ Syntax ]---------------------
+----------------------------------
+switch(conditional_expression_1) {
+case value1:
+  // code to run if conditional_expression_1 equals value1;
+  break; // not mandatory, but best practice
+case value2:
+  // code to run if conditional_expression_1 equals value2;
+  break; // not mandatory, but best practice
+default:
+  // code to run if everything "fails"
+  // could be used as a "help" messege or debugging 
+}
+
+================================
+---[ For ]-------------------
+================================
+- Loop through stuff...
+
+----------------------------------
+---[ Syntax 1 ]-------------------
+----------------------------------
+for (initialization; condition; increment/decrement) {
+  // code to loop through
+}
+
+----------------------------------
+---[ Syntax 2 ]-------------------
+----------------------------------
+for (statement 1; statement 2; statement 3) {
+  // code
+}
+
+----------------------------------
+---[ Example ]--------------------
+----------------------------------
+- Set i to 0, while it's less than 5 print the number, then add 1
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+================================
+---[ While  ]-------------------
+================================
+- While condition is true, repeat code
+- Unlike the Do-While loop, if the condition is NOT true, the code won't run
+
+----------------------------------
+---[ Syntax ]---------------------
+----------------------------------
+while (conditional_expression) {
+  // code to loop
+}
+
+================================
+---[ Do-While  ]-------------------
+================================
+- Similar to while, but this will run the code once (first), THEN check the while statement
+- This will ALWAYS run the code at least once
+
+----------------------------------
+---[ Syntax ]---------------------
+----------------------------------
+do {
+  // code
+} while (conditional_expression);
+
+######################################################
+# References
+######################################################
+1. https://onecompiler.com/java/wiki
+2. https://www.w3schools.com/java/java_conditions_elseif.asp
