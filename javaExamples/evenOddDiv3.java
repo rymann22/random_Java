@@ -3,6 +3,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);       
+      System.out.println("Enter an int followed by enter three times");
       int inputNum1 = scnr.nextInt();
       int inputNum2 = scnr.nextInt();
       int inputNum3 = scnr.nextInt();
@@ -24,7 +25,7 @@ public class Main {
       
       System.out.println("The sum of all numbers is: " + inputSum);
       System.out.println("Numbers as a sring: " + intString);
-      String divThree = (strInt3 % 3 == 0) ? "Divisible by 3!" : "Not divisible by 3!";
+      String divThree = (strInt3 % 3 == 0) ? intString + " is divisible by 3!" : intString + " is not divisible by 3!";
       System.out.println(divThree);
   }
 }

@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
-//public class LabProgram {
 public class average_double {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
       /* Type your code here. */
       double[] inputArray = new double[3];
       double arrayAverage;
+      System.out.println("Enter 3 doubles. Hit enter after each double");
+      System.out.print("Enter first double: ");
       inputArray [0] = scnr.nextDouble();
+      System.out.print("Enter second double: ");
       inputArray [1] = scnr.nextDouble();
+      System.out.print("Enter third double: ");
       inputArray [2] = scnr.nextDouble();
       System.out.println("The length of the array is: " + inputArray.length);
       System.out.println("Array item 1: " + inputArray[0]);
